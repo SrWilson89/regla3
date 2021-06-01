@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.cajita{
+    width: 50%;
+    background-color: #3498db;
+    padding: 5px 15px;
+}
+
+input, button{
+    font-size: 1.31em;
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    input, button{
+        font-size: .6em;
+        margin-right: 5px;
+        padding: 2px;
+    }
+
+    .cajita{
+        width: 100%;
+        padding: 5px;        
+    }
+
+    .lateral{
+        width: 95%;
+        display: flex;
+    }
+}
