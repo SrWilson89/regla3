@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regla de 3</title>
+    <title>Calculadora de Regla de 3</title>
+    <meta name="description" content="Calculadora simple para resolver problemas de regla de tres">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/ico.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="contenedor">
+        <h1>Calculadora de Regla de 3</h1>
         <div class="cajita">
-            <div class="lateral">
-                <input type="number" name="" id="ainfo">
-                <input type="number" name="" id="binfo">
+            <div class="grupo-inputs">
+                <div class="columna">
+                    <label for="ainfo">Valor A</label>
+                    <input type="number" id="ainfo" placeholder="Ingrese valor A">
+                    
+                    <label for="binfo">Valor B</label>
+                    <input type="number" id="binfo" placeholder="Ingrese valor B">
+                </div>
+                <div class="columna">
+                    <label for="cinfo">Valor C</label>
+                    <input type="number" id="cinfo" placeholder="Ingrese valor C">
+                    
+                    <label for="xinfo">Resultado X</label>
+                    <input type="number" id="xinfo" readonly placeholder="Resultado">
+                </div>
             </div>
-            <div class="lateral">
-                <input type="number" name="" id="cinfo">
-                <input type="number" name="" id="xinfo">
-            </div>
-            <button onclick="calculame()">Calcular</button>        
+            <button id="calcular-btn" class="btn-calcular">Calcular</button>
+            <button id="limpiar-btn" class="btn-limpiar">Limpiar</button>
         </div>
     </div>
-    
+    <script src="js/motor.js" defer></script>
 </body>
-<script src="js/motor.js"></script>
 </html>
